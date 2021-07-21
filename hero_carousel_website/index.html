@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hero carousel Website</title>
+</head>
+<body>
+
+  <!-- navigation -->
+  <nav class="nav">
+    <div class="navigation">
+      <h1>codevo</h1>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">skills</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <div class="header">
+    <!-- slider -->
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="content">
+              <img src="./images/retro-cameras-1.jpg">
+              <div class="hero">
+                <h1>simple carousel with html, css and few lines of js</h1>
+                <div>
+                  <a href="#" class="btn">like</a>
+                  <a href="#" class="btn">subscribe</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="content">
+              <img src="./images/retro-cameras.jpg">
+              <div class="hero">
+                <h1>simple carousel with html, css and few lines of js</h1>
+                <div>
+                  <a href="#" class="btn">like</a>
+                  <a href="#" class="btn">subscribe</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="content">
+              <img src="./images/camera-flash-1.jpg">
+              <div class="hero">
+                <h1>simple carousel with html, css and few lines of js</h1>
+                <div>
+                  <a href="#" class="btn">like</a>
+                  <a href="#" class="btn">subscribe</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="content">
+              <img src="./images/camera-flash.jpg">
+              <div class="hero">
+                <h1>simple carousel with html, css and few lines of js</h1>
+                <div>
+                  <a href="#" class="btn">like</a>
+                  <a href="#" class="btn">subscribe</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.js"></script>
+  <script>
+    const glide = document.querySelector(".glide");
+    if (glide) {
+      new Glide(glide, {
+        type: "carousel",
+        startAt: 0,
+        perView: 1,
+        hoverPause: true,
+        gap: 0,
+        autoplay: 2500,
+        animationDuration: 1000,
+        animationTimingFunc: "linear",
+      }).mount()
+    }
+  </script>
+</body>
+</html>
